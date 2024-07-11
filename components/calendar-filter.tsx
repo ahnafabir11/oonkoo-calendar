@@ -1,19 +1,16 @@
 import {
-  ListFilterIcon,
   ChevronLeftIcon,
   CalendarPlusIcon,
   ChevronRightIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CampaignFilterDrawer from "./campaign-filter-drawer";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function CalendarFilter() {
   return (
     <div className="flex items-center justify-between md:justify-start gap-4 py-5 px-4 flex-wrap">
-      {/* CAMPAIGN FILTER DRAWER */}
-      <Button size="icon" variant="ghost" className="order-1 xl:hidden">
-        <ListFilterIcon className="size-6" />
-      </Button>
+      <CampaignFilterDrawer className="order-1 xl:hidden" />
 
       {/* CREATE CAMPAIGN DRAWER */}
       <Button

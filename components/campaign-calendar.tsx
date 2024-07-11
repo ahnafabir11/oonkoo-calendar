@@ -3,7 +3,7 @@ import CalendarFilter from "./calendar-filter";
 
 export default function CampaignCalendar() {
   return (
-    <Card>
+    <Card className="w-full">
       <CalendarFilter />
 
       {/* CALENDER VIEW */}
