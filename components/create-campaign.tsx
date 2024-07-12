@@ -1,6 +1,7 @@
 import CampaignFilter from "./campaign-filter";
 import CalendarHeader from "./calendar-header";
 import CampaignCalendar from "./campaign-calendar";
+import CampaignForm from "./campaign-form";
 
 export default function CreateCampaign() {
   return (
@@ -16,7 +17,9 @@ export default function CreateCampaign() {
         <CampaignCalendar />
 
         {/* CREATE CAMPAIGN FORM */}
-        <div className="hidden xl:block w-full max-w-72"></div>
+        <div className="hidden xl:block w-full max-w-72">
+          <CampaignForm />
+        </div>
       </div>
     </section>
   );
