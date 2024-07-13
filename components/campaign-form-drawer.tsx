@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
-import { ListFilterIcon } from "lucide-react";
-import CampaignFilter from "./campaign-filter";
+import CampaignForm from "./campaign-form";
 import { Button } from "@/components/ui/button";
+import { CalendarPlusIcon } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-export default function CampaignFilterDrawer({
+export default function CampaignFormDrawer({
   className,
 }: {
   className?: string;
@@ -14,13 +14,13 @@ export default function CampaignFilterDrawer({
     <Sheet>
       <SheetTrigger asChild>
         <Button size="icon" variant="ghost" className={cn("", className)}>
-          <ListFilterIcon className="size-6" />
+          <CalendarPlusIcon className="size-6" />
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="left" className="p-2 pt-10">
+      <SheetContent side="right" className="p-1 pt-10">
         <ScrollArea className="h-full">
-          <CampaignFilter />
+          <CampaignForm />
         </ScrollArea>
       </SheetContent>
     </Sheet>

@@ -1,10 +1,7 @@
-import {
-  ChevronLeftIcon,
-  CalendarPlusIcon,
-  ChevronRightIcon,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CampaignFormDrawer from "./campaign-form-drawer";
 import CampaignFilterDrawer from "./campaign-filter-drawer";
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function CalendarFilter() {
@@ -12,14 +9,7 @@ export default function CalendarFilter() {
     <div className="flex items-center justify-between md:justify-start gap-4 py-5 px-4 flex-wrap">
       <CampaignFilterDrawer className="order-1 xl:hidden" />
 
-      {/* CREATE CAMPAIGN DRAWER */}
-      <Button
-        size="icon"
-        variant="ghost"
-        className="order-2 sm:order-3 md:order-4 xl:hidden"
-      >
-        <CalendarPlusIcon className="size-6" />
-      </Button>
+      <CampaignFormDrawer className="order-2 sm:order-3 md:order-4 xl:hidden" />
 
       {/* SWITCH MONTH */}
       <div className="flex items-center justify-between basis-full sm:basis-auto order-3 sm:order-2">
