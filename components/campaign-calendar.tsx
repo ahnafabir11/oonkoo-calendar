@@ -35,9 +35,11 @@ const getData = async () => {
   return objectData as Campaign[];
 };
 
-export default async function CampaignCalendar() {
-  const selectedDate = new Date();
-
+export default async function CampaignCalendar({
+  selectedDate,
+}: {
+  selectedDate: Date;
+}) {
   const firstDayOfMonth = startOfMonth(selectedDate);
   const lastDayOfMonth = endOfMonth(selectedDate);
 

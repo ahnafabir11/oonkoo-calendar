@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
+import MonthNavigator from "./month-navigator";
 import CampaignFormDrawer from "./campaign-form-drawer";
 import CampaignFilterDrawer from "./campaign-filter-drawer";
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function CalendarFilter() {
@@ -11,19 +10,7 @@ export default function CalendarFilter() {
 
       <CampaignFormDrawer className="order-2 sm:order-3 md:order-4 xl:hidden" />
 
-      {/* SWITCH MONTH */}
-      <div className="flex items-center justify-between basis-full sm:basis-auto order-3 sm:order-2">
-        <div>
-          <Button size="icon" variant="ghost">
-            <ChevronLeftIcon className="size-6" />
-          </Button>
-          <Button size="icon" variant="ghost">
-            <ChevronRightIcon className="size-6" />
-          </Button>
-        </div>
-
-        <h5 className="text-xl leading-5 font-medium">June 2024</h5>
-      </div>
+      <MonthNavigator className="basis-full sm:basis-auto order-3 sm:order-2" />
 
       {/* SWITCH CALENDER VIEW */}
       <Tabs

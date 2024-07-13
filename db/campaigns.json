@@ -1,17 +1,17 @@
 [
   {
     "id": "campaign-1",
-    "startDate": "2024-07-13T18:00:00.000Z",
-    "endDate": "2024-07-17T18:00:00.000Z",
+    "startDate": "2024-07-01T18:00:00.000Z",
+    "endDate": "2024-07-04T18:00:00.000Z",
     "allDay": true,
     "timeSlot": 15,
     "location": "peterborough",
     "status": "booked"
   },
   {
-    "id": "campaign-4",
-    "startDate": "2024-07-14T18:00:00.000Z",
-    "endDate": "2024-07-15T18:00:00.000Z",
+    "id": "campaign-2",
+    "startDate": "2024-07-10T18:00:00.000Z",
+    "endDate": "2024-07-12T18:00:00.000Z",
     "allDay": false,
     "adSlots": [
       {
@@ -28,25 +28,25 @@
     "status": "booked"
   },
   {
-    "id": "campaign-6",
-    "startDate": "2024-07-14T18:00:00.000Z",
+    "id": "campaign-3",
+    "startDate": "2024-07-13T18:00:00.000Z",
     "endDate": "2024-07-16T18:00:00.000Z",
-    "allDay": true,
-    "timeSlot": 15,
-    "location": "peterborough",
-    "status": "pre-booked"
-  },
-  {
-    "id": "campaign-2",
-    "startDate": "2024-07-20T18:00:00.000Z",
-    "endDate": "2024-07-22T18:00:00.000Z",
     "allDay": true,
     "timeSlot": 15,
     "location": "peterborough",
     "status": "booked"
   },
   {
-    "id": "campaign-3",
+    "id": "campaign-4",
+    "startDate": "2024-07-16T18:00:00.000Z",
+    "endDate": "2024-07-18T18:00:00.000Z",
+    "allDay": true,
+    "timeSlot": 15,
+    "location": "peterborough",
+    "status": "pre-booked"
+  },
+  {
+    "id": "campaign-5",
     "startDate": "2024-07-23T18:00:00.000Z",
     "endDate": "2024-07-23T18:00:00.000Z",
     "allDay": true,
@@ -55,7 +55,7 @@
     "status": "booked"
   },
   {
-    "id": "campaign-4",
+    "id": "campaign-6",
     "startDate": "2024-07-23T18:00:00.000Z",
     "endDate": "2024-07-24T18:00:00.000Z",
     "allDay": false,
@@ -68,5 +68,51 @@
     "timeSlot": 15,
     "location": "peterborough",
     "status": "pre-booked"
+  },
+  {
+    "id": "campaign-7",
+    "startDate": "2024-06-01T18:00:00.000Z",
+    "endDate": "2024-06-04T18:00:00.000Z",
+    "allDay": true,
+    "timeSlot": 15,
+    "location": "peterborough",
+    "status": "booked"
+  },
+  {
+    "id": "campaign-8",
+    "startDate": "2024-06-18T18:00:00.000Z",
+    "endDate": "2024-06-20T18:00:00.000Z",
+    "allDay": false,
+    "adSlots": [
+      {
+        "from": "1999-12-10T18:00:00.000Z",
+        "to": "1999-12-10T19:00:00.000Z"
+      },
+      {
+        "from": "1999-12-10T20:00:00.000Z",
+        "to": "1999-12-10T24:00:00.000Z"
+      }
+    ],
+    "timeSlot": 15,
+    "location": "peterborough",
+    "status": "booked"
+  },
+  {
+    "id": "campaign-9",
+    "startDate": "2024-06-23T18:00:00.000Z",
+    "endDate": "2024-06-25T18:00:00.000Z",
+    "allDay": true,
+    "timeSlot": 15,
+    "location": "peterborough",
+    "status": "booked"
+  },
+  {
+    "id": "campaign-7",
+    "startDate": "2024-08-04T18:00:00.000Z",
+    "endDate": "2024-08-08T18:00:00.000Z",
+    "allDay": true,
+    "timeSlot": 15,
+    "location": "peterborough",
+    "status": "booked"
   }
 ]

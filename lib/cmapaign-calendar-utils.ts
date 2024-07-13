@@ -113,11 +113,14 @@ export const convertCampaignsToCalendarLabels = (campaigns: Campaign[]) => {
             )}`,
           };
 
-          const indexToBeInserted = data.hasAfter
-            ? Math.max(acc[nextDateKey]?.length || 0, acc[dateKey].length)
-            : data.hasPrevious
-            ? acc[preDateKey].length - 1
-            : acc[dateKey].length;
+          const maxLength = Math.max(
+            acc[preDateKey]?.length || 0,
+            acc[nextDateKey]?.length || 0
+          );
+
+          const currLength = acc[dateKey].length;
+          const indexToBeInserted =
+            currLength === 0 ? Math.max(0, maxLength - 1) : currLength;
 
           acc[dateKey][indexToBeInserted] = data;
         } else {
@@ -145,11 +148,15 @@ export const convertCampaignsToCalendarLabels = (campaigns: Campaign[]) => {
               )}`,
             };
 
-            const indexToBeInserted = data.hasAfter
-              ? Math.max(acc[nextDateKey]?.length || 0, acc[dateKey].length)
-              : data.hasPrevious
-              ? acc[preDateKey].length - slotsLength + slotIndex
-              : acc[dateKey].length;
+            const maxLength =
+              Math.max(
+                acc[preDateKey]?.length || 0,
+                acc[nextDateKey]?.length || 0
+              ) - slotsLength;
+
+            const currLength = acc[dateKey].length;
+            const indexToBeInserted =
+              currLength === 0 ? Math.max(0, maxLength) : currLength;
 
             acc[dateKey][indexToBeInserted] = data;
           });
